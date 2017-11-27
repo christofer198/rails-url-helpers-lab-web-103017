@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    redirect_to :show
+    redirect_to action: show
   end
 
   private
