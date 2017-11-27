@@ -15,6 +15,7 @@ class StudentsController < ApplicationController
       @student.update(active: false)
     else
       @student.update(active: true)
+    end
     redirect_to action: "show", id: params[:id]
   end
 
