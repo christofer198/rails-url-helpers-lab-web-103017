@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    redirect_to action: show
+    redirect_to action: "show", id: params[:id]
   end
 
   private
